@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<link rel="stylesheet" href="portfolio.css"/>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="portfolio.js"></script>
+</head>
+
+<body>
+<!-- --------------------------------------header balk ----------------------------------->
+	<div class="header">
+		<div id="naam">Ernanet Muijskens</div>
+	</div>
+	<div class="menu">
+       <div id="item">menu</div>
+		<div id="submenu">
+        <a href="start.html">start</a>
+        <a href="aboutme.html">about me</a>
+        <a href="skills.html">skills</a>
+		<a href="cv.html">curriculum vitea</a>
+		<a href="ambities.html">ambities</a>
+		<a href="fun.html">fun</a>
+       </div>
+	</div>
+<!-- ---------------------------------------pop-up contactformulier container------------------------>
+    <div id="contactMe" class="contactFormulier" >
+            <h1>Contact Me</h1>
+            <form onsubmit="thankYou()">
+                <input name="name" placeholder="Name" type="text" required /><br/>
+                <input name="email" placeholder="Email" type="email" required /><br/>
+                <textarea name="message" placeholder="Message" required ></textarea>
+                <input type="submit" value="SEND" class="submit"/>
+            </form>
+    </div>
+<!-- --------------------------------------intro tekst box----------------------------------->
+	<div class="tekstintro">
+		<h2><i>"Waarom TL verlichting en een schrobput<br>
+		als je ook een kaarsje kunt branden?"</i></h2>
+	</div>
+<!-- --------------------------------------Slideshow container----------------------------------->
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="img1.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="metfiets.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="img2.jpg" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="metzonnebril.jpg" style="width:100%">
+		</div>
+	</div>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+	
+<!-- --------------------------------------Slideshow script----------------------------------->
+	<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+		   slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 3500); // verander image elke drie en halve seconde
+	}
+	</script>
+<!-- --------------------------------------body tekst box ----------------------------------->
+	<div class="tekstintro">
+			<p>Bla bla <mark>Start</mark> bla. Bla bla bla bla.
+			Bla bla bla bla bla bla bla bla. Bla bla bla bla.
+			Bla bla bla bla bla bla bla bla. Bla bla bla bla.		
+			Bla bla bla bla. Bla bla bla <mark>einde start.</mark></p>
+	</div>
+<!-- --------------------------------------footer balk ----------------------------------->	
+		<div class="footer">	
+			<div class="by">2018 © by Ernanet </div>
+			<div class="contactcontainer">
+		<!-- --------------------------------------contact button pop-up contactformulier------------>	
+			<a href="#" class="contactbutton" onclick="showContact()">contact me</a>
+			</div>
+		</div>
+		
+
+</body>	
+</html>
+

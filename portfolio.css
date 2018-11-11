@@ -1,0 +1,434 @@
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom:0px;
+	margin-left: 0px;
+	width: 100%;
+	background-color: pink;
+	
+}
+
+
+/*------------------------header links styling------------------------*/
+.header {
+	width: 70%;
+	height: 60px;
+	background-color: black;
+	float: left;
+    	
+}
+
+#naam {
+	height: 30px;
+	width: 220px;
+	display: block;
+	float: left;
+    background-color: black;
+	color: white;
+    font-size: 20px;
+	font-family: courier new;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
+}
+
+/*------------------------header rechts container styling------------------------*/
+.menu {
+	width: 30%;
+	height: 60px;
+	background-color: black;
+	position: relative;
+    display: inline-block;
+	}
+/*------------------------dropdown menu styling------------------------*/
+
+#item {
+	height: 40px;
+	width: 80px;
+    background-color: hotpink;
+	border: solid;
+	border-color: hotpink;
+	border-radius: 10px;
+	margin-top: 5px;
+    color: white;
+	font-family: courier new;
+	font-weight: bold;
+    font-size: 16px;
+	text-align: center;
+    cursor: pointer;
+	padding-top: 0px;
+}
+
+#item:hover, #item:focus {
+    background-color: black;
+	border-color: black;
+
+}
+
+	
+#submenu {
+    display: none;
+    position: absolute;
+    background-color: #00000066;
+	min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	overflow: visible;
+}
+
+#submenu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	
+}
+#submenu a:hover {
+    background-color: black;
+	color: hotpink;
+	border-color: black;
+	
+}
+
+/*-------------------styling button click vergroot tekst + - verklein tekst ---------------------*/
+#vergrootbutton {
+	width:10px;
+	height: 10px;
+	margin-left: 5px;
+	background-color: pink;
+	border: solid;
+	border-color: pink;
+	color: black;
+	font-family: courier new;
+	font-weight: bold;
+
+
+}
+
+/* ---------blauwe rand na onclick weglaten*-----------*/
+button:focus {
+	outline: none;	
+}
+
+
+
+/*---------------------------slideshow styling------------------------------*/
+
+/* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}*/
+
+/* Slideshow container ---------*/
+.slideshow-container {
+  max-height: 375px;
+  max-width: 600px;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 90px;
+  z-index: -1;
+  
+}
+
+
+/* Nummering text (1/3 etc) ------------*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.0s;
+  animation-name: fade;
+  animation-duration: 4.0s;
+   
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* ------------------------einde Slideshow ----------------------------------------*/
+
+
+/*-------------------------body tekst styling--------------------------------------*/
+#tekst {
+	margin-top: 10px; 
+	margin-right: 20px;
+	margin-bottom: 70px;
+	margin-left: 20px;
+	font-family: courier new;
+	font-size: 16px;
+	float: left;
+}
+
+.tekstintro {
+	margin-top: 10px; 
+	margin-left: 20px;
+    font-family: courier new;
+	font-size: 16px;
+	float: left;
+}
+
+/*--------------------------------------animatie balk-----------------------------------------------*/
+.animatiesbalk {
+	width: 100%;
+	height: 202px;
+	margin-top: 20px;
+	background-color: pink;
+	z-index: -10;
+}
+
+/*--------------------------------------animatie containers-----------------------------------------------*/
+.anibox{
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	z-index: -45;
+	
+}
+
+
+
+/*--------------------------------------pink dot css animation in skills----------------------------------------------*/
+#hotpinkdot{
+    position:relative;
+    height:100px;
+    width:100px;
+	margin-left: 10px;
+	margin-top: 10px;
+    background-color: hotpink;
+    border-radius:50%;
+    color: white;
+    font-family:courier;
+    font-weight:bold;
+    text-align:center;
+    padding:17px;
+    animation-name:hotpinkdot;
+    animation-duration:4s;
+    animation-iteration-count:3;
+    animation-timing-function:ease-out;
+    
+}
+
+@keyframes hotpinkdot {
+    
+0% {
+    top:5;
+    height:100px;
+    width:100px;
+}    
+    
+20% {
+    top:5px;
+    height:60px;
+    width:60px;
+}  
+
+40% {
+    top:50px;
+    height:50px;
+    width:50px;
+}  
+
+60% {
+    top:50px;
+    height:60px;
+    width:60px;
+}  
+ 
+80% {
+    top:80px;
+    height:60px;
+    width:60px;
+}  
+ 
+90% {
+    top:50px;
+    height:80px;
+    width:80px;
+}   
+
+100% {
+    top:5px;
+    height:100px;
+    width:100px;
+}      
+   
+}
+
+/*-----------------------------------------------canva link button in CV------------------------*/
+#canva {
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-bottom: 90px;
+	border-radius: 10px;
+}	
+	
+	
+	
+}
+
+/*-----------------------------------------------regen achtergrond animation in skills------------------------*/
+#regen {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+
+
+/*------------------------------------------oog gif animatie (zelf getekend/gemaakt)in skills------------------------*/
+#oog {
+	position: relative;
+	width: 190px;
+	height: 90px;
+	margin-top: 50px;
+	margin-left: 5px;
+	opacity: 0.8;
+}
+
+/*------------------------------animated gifs box styling in fun----------------------------------------------------*/
+
+#pinkcoat {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+#penw {
+	position: relative;
+	width: 200px;
+	height: 200px;	
+	border-radius: 10px;
+}
+	
+#face {
+	margin-top: 25px;
+	margin-left: 25px;
+	border-radius: 10px;
+}	
+	
+/*----------------------------------*footer styling-------------------------------------*/
+.footer{
+	width: 100%;
+	height: 80px;
+	position: fixed;
+    left: 0;
+    bottom: 0;		
+}
+
+.by {
+	width: 50%;
+	height: 60px;
+	background-color: hotpink;
+	float: left;
+	text-align: center;	
+	padding-top: 20px;
+	color: white;
+	font-family: courier new;
+}
+
+.contactcontainer {
+	width: 50%;
+	height: 60px;
+	background-color: hotpink;
+	padding-top: 20px;
+	float: left;
+
+}
+
+/*----------------------------------contactbutton styling startpagina--------------------------------------*/
+.contactbutton{
+	height: 50px;
+    width: 80px;
+    display: inline block;
+	background-color:#B376F1;
+	padding: 10px;
+    border-style: solid;
+	border-color: #B376F1;
+    border-radius:10px;
+    text-align: center;
+	padding-top: 5px;
+	text-decoration: none;
+	color: white;
+	font-family: courier new;
+	font-weight: bold;
+   
+}
+
+
+.contactbuttonenvelop {
+	height: 50px;
+    width: 80px;
+    display: inline block;
+	backbackground-color: hotpink;
+	
+}
+
+.contactbutton:hover {
+	background-color:#E2C9FD;
+	border-color: #E2C9FD;
+}
+
+/*------------------------contact popup formulier styling startpagina---------------------------*/	
+
+.contactFormulier {
+	position: ;
+	margin-top: 20px;
+	margn-left: 20px;
+	height: 300px;
+	width: 200px;	
+	display: none;
+    color: #3b464c;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+	position:relative;	
+    z-index:41;
+    top: 25%;
+}
+
+
+/*------------------------------------ contact me mailto buttom styling---------------------------------*/
+
+
+
+
+

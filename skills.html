@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<link rel="stylesheet" href="portfolio.css"/>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="portfolio.js"></script>
+</head>
+
+<body>
+<!-- --------------------------------------header balk ----------------------------------->
+	<div class="header">
+		<div id="naam">Ernanet Muijskens</div>
+	</div>
+	 <div class="menu">
+      <div id="item">menu</div>
+		<div id="submenu">
+        <a href="start.html">start</a>
+        <a href="aboutme.html">about me</a>
+        <a href="skills.html">skills</a>
+		<a href="cv.html">curriculum vitea</a>
+		<a href="ambities.html">ambities</a>
+		<a href="fun.html">fun</a>
+       </div>
+	</div>
+<!----------------------vergroot body tekst + - verklein body tekst buttons----------------------------->	
+	<div>
+		<button id="vergrootbutton" onclick="verGroot()"><h1>+</h1></button>
+		<button id="vergrootbutton" onclick="verKlein()"><h1>-</h1></button>
+	</div>		
+<!-- --------------------------------------body tekst box ----------------------------------------------->	
+	<div id="tekst">
+		<p><mark>Skills</mark> bla. Bla bla bla.
+		Bla bla bla bla bla bla bla bla. Bla bla bla bla.
+		Bla <mark>HTML5</mark>. Bla bla <mark>CSS3</mark>.
+		Bla bla <strong>plug-ins? Grid?</strong> bla bla <strong>Eigen font bla bla.</strong>
+		Bla bla bla bla bla bla bla bla. Bla bla bla bla.
+		Bla bla bla <mark>JavaScript</mark>. bla bla bla.
+		Bla bla <mark>Jqery</mark>. bla bla bla. Bla bla.
+		Bla bla bla bla. Bla bla bla bla bla bla bla bla.
+		Bla bla <strong>PHP</strong> bla bla bla <mark>Back-end</mark>. Bla bla.
+		Bla <mark>SEO</mark> Bla bla bla bla bla bla bla.	
+		Bla bla bla. Bla bla bla bla bla bla bla bla bla.
+		Bla bla bla bla bla bla bla bla. Bla bla bla bla.
+		Bla bla bla bla. Bla bla <mark>einde skills.</mark></p>
+	</div>
+<!-- --------------------------------------animatie balk----------------------------------------------->
+	<div class="animatiesbalk">
+		<!-- --------------------------------------animatie container----------------------------------------------->	
+		<div class= anibox>
+			<div id="hotpinkdot"><p>Hello<br />there<br />!</p></div><!-- ---------pink dot css animation ------------->
+		</div>
+		
+		<!-- --------------------------------------animatie container----------------------------------------------->	
+		<div class= anibox>
+			<div><image id="regen" src="regen.gif"/></div><!-----------regen achtergrond animation------------->
+		</div>
+		
+		<!-- --------------------------------------animatie container----------------------------------------------->	
+		<div class= anibox>
+			<div><image id="oog" src="oogani.gif"/></div><!-- ---------oog gif animatie (zelf getekend/gemaakt)------------->
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="tekst">
+		<p>Bla bla bla bla. Bla bla bla bla bla bla bla bla.
+		Bla bla bla bla bla bla bla bla. Bla bla bla bla.
+		Bla bla bla bla. Bla bla <mark>einde skills.</mark></p>
+	</div>
+	
+<!-- --------------------------------------footer balk ----------------------------------->		
+	<div class="footer">	
+		<div class="by">2018 © by Ernanet </div>
+		<div class="contactcontainer"><!------------------------------mailto contact me envelop-------------------------->
+			<a href="mailto:emuijskens@planet.nl?&subject=Hi Ernanet!" target="_top" class="contactbuttonenvelop">
+			<img src="envelop.png"/></a>
+		</div>	
+	</div>
+	
+
+</body>	
+</html>	
